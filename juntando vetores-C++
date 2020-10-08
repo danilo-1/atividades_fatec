@@ -1,0 +1,52 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+int main(int argc, char** argv) {
+    int vetor1[7];
+    int vetor2[7];
+    float vetorF[7];
+    int operacao;
+
+    cout<<"Popule o primeiro vetor \n\n";
+    for(int i=0; i<=6; i++){
+        cin>>vetor1[i];
+    }
+
+    cout<<"Popule o segundo vetor \n\n";
+    for(int j=0; j<=6; j++){
+        cin>>vetor2[j];
+    }
+
+        cout<<"Escolha uma operacao \n\n 1 - Soma \n\n 2 - Subtracao \n\n 3 - Multiplicacao \n\n 4 - Divisao \n\n";
+        cin>>operacao;
+        switch(operacao){
+            case 1:
+                for(int k=0; k<=6; k++){
+                vetorF[k] = vetor1[k] + vetor2[k];
+            }
+                break;
+            case 2:
+                for(int k=0; k<=6; k++){
+                vetorF[k] = vetor1[k] - vetor2[k];
+            }
+                break;
+            case 3:
+                for(int k=0; k<=6; k++){
+                vetorF[k] = vetor1[k] * vetor2[k];
+            }
+                break;
+            case 4:
+                for(int k=0; k<=6; k++){
+                vetorF[k] = vetor1[k] / vetor2[k];
+            }
+                break;
+
+    }
+    for(int h=0; h<=6; h++){
+        cout<<"vetorF["<<h<<"]="<<vetorF[h]<<"\n\n";
+    }
+
+
+    return 0;
+}
