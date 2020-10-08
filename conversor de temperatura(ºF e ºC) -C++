@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+float fare(float a);
+float cel(float a);
+float w;
+
+int main(int argc, char** argv) {
+	float w;
+	
+	int b;
+	cout<<"digite 1 pra Fahrenheit e 2 para celsius"<<"\n"<<endl;
+	cin>>b;
+	switch (b){
+		case 1:
+			cout<<"digite a temperatura em Fahrenheit: "<<"\n"<<endl;
+			cin>>w;
+			cout<<"a temperatura em Celsius e de: "<<fare(w)<<"\n";
+			break;
+			
+		case 2:
+			cout<<"digite a temperatura em celsius: "<<"\n"<<endl;
+			cin>>w;
+			cout<<"a temperatura em Fahrenheit e de: "<<cel(w)<<"\n";
+			break;
+		}
+	return 0;
+}
+float fare(float a){
+	float f=(a-32)*5/9;
+	return f;
+}
+float cel(float a){
+	float f=(a*9/5)+32;
+	return f;
+}
