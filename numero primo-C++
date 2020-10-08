@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+float pri(int a);
+
+int main(int argc, char** argv) {
+	int b;
+	
+	cout<<"digite um numero para saber se ele é primo, [obs: 1 e primo e 0 nao e]: "<<"\n";
+	cin>>b;
+	cout<<pri(b)<<"\n"<<endl;
+	
+
+	return 0;
+}
+float pri(int a){
+	int i=2;
+		if(a% i == 0){
+
+			return 0;
+	}
+		else{
+			
+			return 1;
+		}
+}
