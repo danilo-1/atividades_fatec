@@ -1,0 +1,18 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+	int a,b,c;
+	
+	
+	cout<<"digite o valor da base e da altura respectivamente de um triangulo"<<"\n"<<endl;
+	cin>>a>>b;
+	c = (a*b)/2;
+	
+	cout<<"a area do triangulo sera "<<c<<"cm²"<<endl;
+	
+	return 0;
+}
