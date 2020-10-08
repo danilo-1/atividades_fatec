@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+int main(int argc, char** argv) {
+    int vetor[8];
+    int aux;
+
+    cout<<"Popule o vetor \n\n";
+    for(int i=0; i<=7; i++){
+        cin>>vetor[i];
+    }
+    for(int a=0; a<=7; a++){
+        for(int j=0; j<=7; j++){
+            if(vetor[a] < vetor[j]){
+                aux = vetor[a];
+                vetor[a] = vetor[j];
+                vetor[j] = aux;
+            }
+        }
+    }
+    for(int k=0; k<=7; k++){
+        cout<<"vetor["<<k<<"]="<<vetor[k]<<"\n\n";
+    }
+
+    return 0;
+}
