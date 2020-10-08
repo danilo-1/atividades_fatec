@@ -1,0 +1,32 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+	
+	int a,b,c,d;
+	float x1,x2;
+	
+	cout<<"Digite 3 numeros "<<endl;
+	cin>>a>>b>>c;
+	
+	d=(b*b)-4*a*c;
+	
+	if(d>0){
+		x1 = -(b + sqrt(d))/(2*a);
+		x2 = -(b + sqrt(d))/(2*a);
+		cout<<"As raizes sao "<<x1<<" "<<x2<<endl;
+		
+	}
+	else if(d==0){
+		x1= -b/(2*a);
+		cout<<"o valor da raiz e "<<x1<<endl;
+		
+	}
+	else {
+		cout<<"raiz nao existe"<<endl;
+	}
+	return 0;
+}
